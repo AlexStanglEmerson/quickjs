@@ -1,4 +1,11 @@
-# Archived
+# Fork Purpose
+This fork was created to provide support for Python 3.13 and newer without having to publish binary wheels for each version. The repository and QuickJS version are identical to the original repository. Only the [setup.py](setup.py) and [pyproject.toml](pyproject.toml) files have been modified to use `zig cc` to compile the C extension. This means you should be able to install this package without needing a C compiler installed already. The `ziglang` package is installed from PyPI as a build dependency.
+
+To install this package, run `pip install git+https://github.com/AlexStanglEmerson/quickjs`.
+
+This fork will not be maintained. It's simply provided as a quick fix to continue using the `quickjs` package on Python 3.13 and newer.
+
+# ~~Archived~~
 This repository has been **archived** due to lack of maintenance.
 
 [![CircleCI](https://circleci.com/gh/PetterS/quickjs.svg?style=svg)](https://circleci.com/gh/PetterS/quickjs) [![PyPI version fury.io](https://badge.fury.io/py/quickjs.svg)](https://pypi.python.org/pypi/quickjs/)
